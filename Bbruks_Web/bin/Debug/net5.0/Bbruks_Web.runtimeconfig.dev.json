@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\daisa\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\daisa\\.nuget\\packages"
+    ]
+  }
+}

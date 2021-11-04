@@ -1,0 +1,65 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+
+<header>
+    <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
+        <div class="container">
+            <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">BBruks</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse d-sm-inline-flex">
+                <ul class="navbar-nav flex-grow-1">
+                </ul>
+
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-2">
+                        <img src="https://bootdey.com/img/Content/avatar/avatar6.png" width="40" height="40" class="rounded-circle">
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Profile" asp-action="Perfil">Perfil</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Cerrar Sesión</a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+</header>
+
+<body>
+    <div class="container-fluid ps-md-0">
+        <div class="row">
+            <div class="col">
+                <div class="login d-flex align-items-center py-5">
+                    <div class="container">
+                        <div class="col-md-9 col-lg-8 m-auto">
+                            <img class="d-flex mx-auto w-25" src="~/logoBbrusk.png" alt="Logo BBruks" />
+                            <h1 class="login-heading mb-4 text-center font-weight-bolder">BBRUKS</h1>
+
+                            <!-- Form Busqueda -->
+                            <form>
+                                <div class="form-floating mb-3">
+                                    <input type="text" class="form-control" id="floatingInput" placeholder="¿Qué libro estás buscando?">
+
+                                </div>
+
+                                <div class="text-center">
+                                    <button class="btn btn-lg btn-primary btn-login text-uppercase fw-bold mb-2 px-5" asp-area="" asp-controller="Search" asp-action="Search" type="submit">Buscar</button>
+                                </div>
+
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
